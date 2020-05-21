@@ -2,18 +2,16 @@
 
   <table class="table table-striped table-bordered">
     <tr>
-      <th>Name</th>
-      <th>Billing Street</th>
-      <th>Billing City</th>
-      <th>Billing State</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
     </tr>
    
-    <% @accounts.each do |account| %>
+    <% @contacts.each do |contact| %>
       <tr>
-        <td><%= account.name %></td>
-        <td><%= account.billingstreet %></td>
-        <td><%= account.billingcity %></td>
-        <td><%= account.billingstate %></td>
+        <td><%= contact.fname %></td>
+        <td><%= contact.lname %></td>
+        <td><%= contact.email %></td>
       </tr>
     <% end %>
 
